@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library</title>
+</head>
+<body>
+    <header>
+        <h1>My Library</h1>
+        <div id="addbook">
+            <img src="icons/plusicon.svg" alt="icon" id="plusicon">
+            <span id="btn">Add Book</span>
+        </div>
+    </header>
+    <section id="modal" class="modal">
+        <div class="modalContent">
+            <div class="modalHeader">
+                <span>Add A New Book</span>
+                <span id="close">&times;</span>
+            </div>
+            <div id="modalBody">
+                <form action="" id="submit">
+                    <input type="text" placeholder="Title" id="title" required>
+                    <input type="text" placeholder="Author" id="author" required>
+                    <input type="number" placeholder="Pages" id="pages"required>
+                    
+                    <div id="checkbox">
+                        <label for="checkbox">Have you read the book?</label>
+                        <input type="checkbox" id="status">
+                    </div>
+                    <input type="submit" value="Add Book" id="addBook">
+                </form>
+            </div>
+            
+        </div>
+
+    </section>
+    <div id="container">
+        <section id="books" class="newAddBooks">
+            <div id="newBookTitle">Title</div>
+            <div id="newBookAuthor">Author</div>
+            <div id="newBookPages">Pages</div>
+            <div id="newBookStatus">Read?</div>
+            <div></div>
+        </section>
+    </div>
+    <div id="cont">
+
+    </div>
+    
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
